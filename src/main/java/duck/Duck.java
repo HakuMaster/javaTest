@@ -1,5 +1,7 @@
 package duck;
 
+import lombok.Builder;
+
 /**
  * Created by liulang on 2017/9/5.
  */

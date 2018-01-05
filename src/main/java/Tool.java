@@ -1,3 +1,6 @@
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -33,5 +36,11 @@ public class Tool {
         System.out.println(Long.valueOf("1500972464000"));
         System.out.println(nowDate);
         System.out.println(age+"************");
+
+        String s = "{ errMsg= null, retCode = 1, data={totalSize=0, size=0, pagenation={startPage=1, rows=50}, dataset=[], tableName=mdep_mdep_chag_seta}}";
+//        Result ormResult = JSON.parseObject(s, Result.class);
+        JSONObject object = JSON.parseObject(s);
+        System.out.println(object);
+
     }
 }
